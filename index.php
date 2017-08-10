@@ -23,12 +23,17 @@
                         <?php
                             //  pages
                             $parents = $pagesParents[NO_PARENT_CHAR];
-                            foreach($parents as $Parent) {
+                            foreach(array_reverse($parents) as $Parent) {
                                 echo '<li class="float-right">'
                                      .'<a href="'.$Parent->permalink().'">'.$Parent->title().'</a>'
                                      .'</li>';
                             }
                         ?>
+                        <li class="float-right">
+                            <a href="<?php echo $Site->url()?>blog">
+                                Blog
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -49,15 +54,15 @@
                 <i class="icon-vital i3x"></i>
                 <ul>
                     <li>
-                        <a href="#">FACEBOOK</a>
+                        <a href="https://de-de.facebook.com/willem.wemser">FACEBOOK</a>
                     </li>
                     <li>│</li>
                     <li>
-                        <a href="#">YOUTUBE</a>
+                        <a href="https://www.youtube.com/channel/UC89Go9Jf11AQG8o5wuklPtg">YOUTUBE</a>
                     </li>
                     <li>│</li>
                     <li>
-                        <a href="#">SOUNDCLOUD</a>
+                        <a href="https://soundcloud.com/willi-wemser/">SOUNDCLOUD</a>
                     </li>
                 </ul>
                 <hr class="small">
