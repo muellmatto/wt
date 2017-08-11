@@ -67,7 +67,7 @@
                 </ul>
                 <hr class="small">
                 <a href="<?php echo $Site->url();?>kontakt/impressum">
-                    <p>© WILLI THOMCYK / IMPRESSUM</p>
+                    <p>© WILLI THOMCZYK / IMPRESSUM</p>
                 </a>
                 <hr class="small">
                 <a href="<?php echo $Site->url() ?>admin">
