@@ -19,7 +19,6 @@
 <!-- insert content -->
 <div class="row">
     <div class="section">
-        <hr>
         <div id="main_content">
             <?php echo $Page->content() ?>
         </div>
