@@ -5,13 +5,9 @@
     if($Post->coverImage()) {
         echo '<div class="row">'
             .'<div class="section">'
-            .'<div class="banner" style="background-image: url(\''
-            .$Post->coverImage()
-            .'\');">'
             .'<h1>'
             .$Post->title()
             .'</h1>'
-            .'</div>'
             .'</div>'
             .'</div>';
     }

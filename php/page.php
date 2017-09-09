@@ -5,13 +5,12 @@
     if($Page->coverImage()) {
         echo '<div class="row">'
             .'<div class="section">'
-            .'<div class="banner" style="background-image: url(\''
-            .$Page->coverImage()
-            .'\');">'
             .'<h1>'
             .$Page->title()
             .'</h1>'
-            .'</div>'
+            .'<img class="banner" src=\''
+            .$Page->coverImage()
+            .'\');">'
             .'</div>'
             .'</div>';
     }

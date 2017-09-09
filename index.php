@@ -31,7 +31,7 @@
                         ?>
                         <li class="float-right">
                             <a href="<?php echo $Site->url()?>blog">
-                                Blog
+                                Aktuelles
                             </a>
                         </li>
                     </ul>

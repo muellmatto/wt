@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lato:300|Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Lato:300|Droid+Serif");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1524,7 +1524,7 @@ img {
     background: #fff; }
 
 #main_content p {
-  font-family: "Libre Baskerville", serif;
+  font-size: 1.2rem;
   clear: both;
   line-height: 2rem;
   text-align: justify; }
@@ -1533,40 +1533,57 @@ img {
   padding: 0.5rem;
   min-height: 4rem; }
 
-h1 + p:first-letter, h2 + p:first-letter, h3 + p:first-letter, h4 + p:first-letter, h5 + p:first-letter, h6 + p:first-letter {
-  float: left;
-  margin: 0.6rem 0.6rem 0 0;
-  padding: 0 1.25rem;
-  font-size: 4rem;
-  line-height: 1;
-  text-indent: 0;
-  background: transparent; }
-h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
-  margin-bottom: 0; }
+h2 {
+  font-family: "Lato", sans-serif; }
+  h2 + p:first-letter {
+    float: left;
+    line-height: 1;
+    text-indent: 0;
+    margin: 0.6rem 0.6rem 0 0;
+    padding: 0 1.25rem;
+    font-size: 4rem;
+    margin: 0.6rem 0 0 0;
+    padding: 0 1rem;
+    font-size: 3rem;
+    background: transparent; }
+  h2 + p {
+    margin-bottom: 0; }
+
+h1, h2, h3, h4, h5 {
+  clear: both; }
 
 h1 {
-  font-size: 4rem; }
+  font-size: 2rem; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 1.8rem; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 /* h4 ~ p
  * padding: 2rem
  * column-count: 2
  * column-gap: 3rem
  * column-rule: 1px solid lightgrey */
-p + p {
-  text-indent: 2rem;
-  margin-top: 0;
+blockquote {
+  font-style: italic;
+  clear: both; }
+  blockquote p {
+    font-weight: 700;
+    text-indent: 0rem !important; }
+  blockquote p:last-child {
+    font-style: normal;
+    font-weight: 400; }
+
+p {
   margin-bottom: 0; }
+  p + p {
+    text-indent: 2rem;
+    margin-top: 0; }
 
 .banner {
-  padding-bottom: 30%;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  width: 100%; }
 
 .banner h1 {
   font-size: 2.2rem;
@@ -1583,11 +1600,18 @@ p + p {
   float: left;
   border: 0; }
 
+.header * {
+  font-family: "Lato", sans-serif; }
+
+.footer * {
+  font-family: "Lato", sans-serif; }
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Droid Serif", serif;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  color: #3e3e3e; }
 
 img {
   width: 50%;
