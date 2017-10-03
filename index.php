@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="<?php echo $Site->language() ?>">
-
+<?php
+ $customFields->define([
+    'soundcloud' => '',
+ ]);
+?>
 <head>
     <?php include(PATH_THEME_PHP.'head.php') ?>
 </head>
