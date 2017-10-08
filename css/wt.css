@@ -1598,7 +1598,8 @@ p {
   padding-right: 0;
   padding-bottom: 0;
   float: left;
-  border: 0; }
+  border: 0;
+  font-weight: bold; }
 
 .header * {
   font-family: "Lato", sans-serif; }
